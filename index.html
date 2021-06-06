@@ -2,21 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
   <title>Flex Panels 💪</title>
     <link rel="stylesheet" href="./style.css">
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     
 </head>
     
 <body>
+    <div class="container">
+        <nav class="navbar-fixed-top">
+            <ul>
+                <li><a class="navitem" href="#home">Home</a></li>
+                <li><a class="navitem" href="#contact">Contact</a></li>
+            </ul>
+            
+            
+        </nav>
+    
+    </div>
+<!--
   <div class="navbar">
       <a class="navitem" href="#home">Home</a>
       <a class="navitem" href="#education">News</a>
       <a class="navitem" href="#contact">Contact</a>
   </div>
+-->
 
-  <a id="home">
-  <div class="panels">
+</body>
+</html>
+
+<!--
+<div class="wrapper">
+  <div class="panels" id="home">
     <div class="panel panel1">
       <p>Hey</p>
       <p>Let's</p>
@@ -43,8 +62,9 @@
       <p>Motion</p>
     </div>
   </div>
-  </a>
+-->
     
+<!--
   <a id="education">
   <div class="panels" >
     <div class="panel panel1">
@@ -74,6 +94,7 @@
     </div>
   </div> 
   </a>
+-->
 
   <script>
     const panels = document.querySelectorAll('.panel');
@@ -94,5 +115,3 @@
     panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
   </script>
 
-</body>
-</html>
