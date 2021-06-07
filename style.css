@@ -15,58 +15,19 @@ html {
       box-sizing: inherit;
     }
 
-    nav{
-      background-color:white;
-      height: 70px;
-        
-    }
-    
-    .navbar {
-/*        display: flex;*/
-        width: 100%;
-        border: 10px solid red;
-    }
-/*
-.container {
-    display: flex;
-    border: 10px solid red;
-}
-*/
-
-/*
-    .navitem {
-        flex-grow: 1;
-        border: 10px solid red;
-    }
-*/
-
-    /* push targets down */
-    :target{
-      padding-top:70px;
-      margin-top:-70px;
-    }
-    /* push entire content down */
-    #wrapper{
-      padding-top:67px;
-    }
-
-/*
     .navbar {
       overflow: hidden;
       background-color: #333;
       position: fixed;
       top: 0;
-*/
 /*        bottom: 90%;*/
 /*        bottom: 30px;*/
-/*      width: 100%;*/
-/*        height: 60px;*/
-/*
+      width: 100%;
+        height: 60px;
       display: flex;
+        
     }
-*/
 
-/*
     .navbar a {
       float: left;
       display: block;
@@ -86,42 +47,33 @@ html {
         flex-grow: 1;
         border: 1px solid red;
     }
-*/
 
 
 
-/*    .panels {*/
+    .panels {
 /*      position: relative;*/
-/*      margin-top: 20px;*/
+      margin-top: 60px;
 /*        top: 20%;*/
 /*        top: 10%;*/
-/*      min-height:100vh;*/
+      min-height:100vh;
 /*        height: 80%;*/
-/*
       overflow: hidden;
       display: flex;
-        padding-top: 80px;
-	padding-bottom: 80px;
-	position: relative;
     }
-*/
 
-/*
     .panel {
-      background:#6B0F9C;
+      background:#dbdbd9;
       box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
       color:white;
       text-align: center;
       align-items:center;
-*/
       /* Safari transitionend event.propertyName === flex */
       /* Chrome + FF transitionend event.propertyName === flex-grow */
-/*
       transition:
         font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
         background 0.2s;
-      font-size: 20px;
+      font-size: 10px;
       background-size:cover;
       background-position:center;
       flex: 1;
@@ -130,8 +82,24 @@ html {
       flex-direction: column;
         
     }
-*/
 
+/* social media logos*/
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
 
 /*
     .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -142,7 +110,6 @@ html {
 */
 
     /* Flex Items */
-/*
     .panel > * {
       margin:0;
       width: 100%;
@@ -154,11 +121,17 @@ html {
         border: 1px solid red;
     }
 
+/*
     .panel > *:first-child { transform: translateY(-100%); }
     .panel.open-active > *:first-child { transform: translateY(0); }
     .panel > *:last-child { transform: translateY(100%); }
     .panel.open-active > *:last-child { transform: translateY(0); }
-
+*/
+/*
+.panel2{
+    flex-direction: row;
+}
+*/
     .panel p {
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
@@ -172,4 +145,4 @@ html {
     .panel.open {
       flex: 5;
       font-size:40px;
-    }*/
+    }
