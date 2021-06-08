@@ -1,7 +1,7 @@
 html {
       box-sizing: border-box;
       background:#ffc600;
-      font-family:'helvetica neue';
+      font-family:'Courier New';
       font-size: 20px;
       font-weight: 200;
       scroll-behavior: smooth;
@@ -25,6 +25,8 @@ html {
       width: 100%;
         height: 60px;
       display: flex;
+        text-align: center;
+      align-items:center;
         
     }
 
@@ -36,6 +38,7 @@ html {
       padding: 14px 16px;
       text-decoration: none;
       font-size: 17px;
+        
     }
 
     .navbar a:hover {
@@ -46,6 +49,8 @@ html {
     .navitem {
         flex-grow: 1;
         border: 1px solid red;
+        text-align: center;
+      align-items:center;
     }
 
 
@@ -62,9 +67,13 @@ html {
     }
 
     .panel {
-      background:#dbdbd9;
-      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
-      color:white;
+      background:#C4C4C3;
+        background: #ddd;
+        background: #C4C4C3 ;
+        background: #4F4E4C ;
+        
+    background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
+    color: #4F4E4C ;
       text-align: center;
       align-items:center;
       /* Safari transitionend event.propertyName === flex */
@@ -78,28 +87,137 @@ html {
       background-position:center;
       flex: 1;
       justify-content: center;
-      display: flex;
-      flex-direction: column;
         
+      
+/*      flex-direction: column;*/
+        overflow: hidden;
+    }
+
+    .panel1 {
+        width: 100%;
+/*        text-align: center;*/
+/*        justify-content: center;*/
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      align-items: center;
+        }
+
+    .subpanel {
+        flex: 1;
+    }
+
+
+    .panel1 > * {
+    /*      text-transform: uppercase;*/
+    /*      font-family: 'Amatic SC', cursive;*/
+    /*      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);*/
+          font-size: 1.8em;
+        width: 100%;
+        border: 1px solid green;
+        }
+
+    .subpanel1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding:2px;
+    /*    margin-bottom: -400px;*/
+
+    /*
+        justify-content: center;
+          align-items: center;
+    */
+    }
+
+
+    .subpanel1 > * {
+
+        border: 1px solid blue;
+         margin:2px;  
+    /*    align-self: end;*/
+    /*    flex: 1;*/
+
+    }
+
+    .subpanel2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+/*        align-items: center;*/
+        padding:2px;
+    }
+    .subpanel2 > * {
+        border: 1px solid blue;
+         margin:2px;  
+        margin-left: 10px; 
+    /*    padding: 3px;*/
+    /*    align-self: end;*/
+/*
+        flex-direction: row;
+        flex: 1;
+*/
+
+    }
+
+    .subpanel2 p:first-child {
+    /*    border: 1px solid blue;*/
+/*        margin-top: 100px;  */
+    /*    align-self: end;*/
+    /*    flex: 1;*/
+
+    }
+
+.panel2{
+/*      background:#F8F7F4 ;*/
+    display: flex;
+    background: linear-gradient(to top, #A5A5A3 0%, #4F4E4C   100%);
+        /* box-shadow is for the line between two panels*/
+/*      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);*/
+      color:#F8F7F4  ;
+    
     }
 
 /* social media logos*/
     .fa {
       padding: 20px;
       font-size: 30px;
-      width: 50px;
+      width: 65px;
       text-align: center;
       text-decoration: none;
       margin: 5px 2px;
+        border-radius: 50%;
+        border: 1px solid black;
     }
     .fa:hover {
         opacity: 0.7;
     }
 
     .fa-facebook {
-      background: #3B5998;
+      background: white;
+      color: black;
+    }
+
+    .fa-instagram {
+      background: #125688;
       color: white;
     }
+
+    .fa-github {
+          background: black;
+          color: white;
+        }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .fa-envelope {
+          background: black;
+          color: white;
+        }
 
 /*
     .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
@@ -110,15 +228,17 @@ html {
 */
 
     /* Flex Items */
-    .panel > * {
+    .panel2 > * {
       margin:0;
-      width: 100%;
+/*      width: 100%;*/
+        height: 100%;
       transition:transform 0.5s;
-      flex: 1 0 auto;
+      flex: 1;
       display:flex;
       justify-content: center;
       align-items: center;
         border: 1px solid red;
+        flex-grow: 1;
     }
 
 /*
@@ -132,17 +252,30 @@ html {
     flex-direction: row;
 }
 */
-    .panel p {
-      text-transform: uppercase;
-      font-family: 'Amatic SC', cursive;
-      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 2em;
+    .panel2 p {
+/*      text-transform: uppercase;*/
+/*      font-family: 'Amatic SC', cursive;*/
+/*      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);*/
+      font-size: 2.5em;
     }
+
+
+
+/*
+    .panel1 div:nth-child(1) {
+      margin-bottom: 80px;
+    }
+*/
+*/
+
+/*
     .panel p:nth-child(2) {
       font-size: 4em;
     }
+*/
 
+/*
     .panel.open {
       flex: 5;
       font-size:40px;
-    }
+    }*/
