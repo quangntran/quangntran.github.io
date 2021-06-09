@@ -4,7 +4,7 @@ html {
       background:#ffc600;
 /*      font-family:'Courier New';*/
     font-family: 'Segoe UI', sans-serif;
-    font-family: 'Helvetica', Sans-Serif;
+    font-family: 'Neue Helvetica', Sans-Serif;
       font-size: 20px;
       font-weight: 200;
       scroll-behavior: smooth;
@@ -24,6 +24,9 @@ html {
         background-color: #1B3E69;
         background-color: #12243A ;
         background-color: #88878C;
+        background-color: #333;
+        background-color: white;
+        
       position: fixed;
       top: 0;
 /*        bottom: 90%;*/
@@ -40,15 +43,16 @@ html {
       float: left;
       display: block;
       color: #f2f2f2;
+        color: black;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;   
+      font-size: 25px;   
     }
 
     .navbar a:hover {
-      background: #ddd;
-      color: black;
+/*      background-color: #ddd;*/
+      color: #0d05f0;
     }
 
     .navitem {
@@ -80,7 +84,17 @@ html {
     background: linear-gradient(to bottom, #CFE0F6 0%, #A0C7F7  100%);
         background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
         background: white;
+        background:#dbd6d5;
+        background: #280d59; 
+        background: #dcdae0;
+        background: #88878a;
+        background-color: #060659;
+        background-color: #041436;
     color: #4F4E4C ;
+        color: black;
+        color: #cbcacc;
+        color: white;
+        color: #f0f3fa;
       text-align: center;
       align-items:center;
       /* Safari transitionend event.propertyName === flex */
@@ -93,13 +107,24 @@ html {
       background-size:cover;
       background-position:center;
       flex: 1;
-        flex-grow: 1;
+      flex-grow: 1;
       justify-content: center;
         
       
 /*      flex-direction: column;*/
         overflow: hidden;
     }
+
+/*
+    .panel > * {
+        width: 100%;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+    }
+*/
+
 
     .panel1 {
         width: 100%;
@@ -116,7 +141,6 @@ html {
         flex: 1;
     }
 
-
     .panel1 > * {
     /*      text-transform: uppercase;*/
     /*      font-family: 'Amatic SC', cursive;*/
@@ -125,7 +149,6 @@ html {
         width: 100%;
         border: 1px solid green;
         }
-
 
     .subpanel1 {
         display: flex;
@@ -144,6 +167,7 @@ html {
 
         border: 1px solid blue;
          margin:2px;  
+        font-size: 2.5em;
     /*    align-self: end;*/
     /*    flex: 1;*/
 
@@ -268,6 +292,10 @@ span:before{
     background: linear-gradient(to top, #2F435C 0%, #2F435C  100%);
     background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
     background: white;
+    background: #dcdae0;
+    background: #88878a;
+    background: #041436;
+/*    background: #dbd6d5;*/
 /*    background: linear-gradient(to top, #F8F7F4 0%, #E2E1DF  100%);*/
         /* box-shadow is for the line between two panels*/
 /*      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);*/
@@ -288,14 +316,16 @@ span:before{
         opacity: 0.2;
     }
     .fa:hover {
-        opacity: 0.8;
+        opacity: 1;
     }
 
     .fa-facebook {
       background: #4F4E4C;
         background: black;
         background: white;
+/*        background: #dbd6d5;*/
       color: #0754B2 ;
+        color: black;
         
     }
 
@@ -308,12 +338,14 @@ span:before{
         background: black;
         background: white;
       color: #0754B2 ;
+        color: black;
     }
 
     .fa-github {
           background: black;
         background: white;
           color: #0754B2 ;
+        color: black;
         }
 
     .fa-linkedin {
@@ -325,6 +357,7 @@ span:before{
         background: black;
         background: white;
       color: #0754B2 ;
+        color: black;
     }
 
     .fa-envelope {
@@ -332,6 +365,7 @@ span:before{
         background: black;
         background: white;
       color: #0754B2 ;
+        color: black;
         }
 
     .tooltip {
