@@ -27,14 +27,14 @@
         </div>
         <div class="subpanel subpanel2">
             <p>i <span class="ani">learn from data</span></p>
-            <p>i worked in <span class="flag flag-us"></span></p>
+            <p>i worked in south korea, vietnam, argentina, usa</p>
             
         </div>
     </div>
     <div class="panel panel2">
 <!--      <p><a href="#" class="fa fa-facebook"></a></p>-->
       <p><a  href="https://www.facebook.com/TrNhQu" target="_blank" class="fa fa-facebook"></a></p>
-      <p><a  href="https://www.instagram.com/quang_630/" target="_blank" target="_blank" class="fa fa-instagram"></a></p>
+      <p class="tooltip" title="ask me for my instagram account"><a  href="#" target="_blank" target="_blank" class="fa fa-instagram"></a><span class="tooltiptext">ask me for my instagram account</span></p>
       <p><a href = "mailto: quangtran0698@gmail.com" target="_blank" class="fa fa-envelope"></a></p>
       <p><a href="https://github.com/quangntran" target="_blank" class="fa fa-github"></a></p>
       <p><a href="https://www.linkedin.com/in/quangnntran/"  target="_blank" class="fa fa-linkedin"></a></p>
@@ -95,8 +95,8 @@
     function animateContent() {
         paragraph = document.querySelector('.ani');
         if (paragraph.innerHTML == 'learn from data'){
-            paragraph.innerHTML = 'build models'
-        } else if (paragraph.innerHTML == 'build models'){
+            paragraph.innerHTML = 'build machine learning models'
+        } else if (paragraph.innerHTML == 'build machine learning models'){
             paragraph.innerHTML = 'philosophize'
         } else if (paragraph.innerHTML == 'philosophize') {
             paragraph.innerHTML = 'do maths'
@@ -106,11 +106,15 @@
             paragraph.innerHTML = 'try to be unbiased'
         } else if (paragraph.innerHTML == 'try to be unbiased') {
             paragraph.innerHTML = 'drink enough fluid a day'
-        } else {
+        } else if (paragraph.innerHTML == 'drink enough fluid a day') {
+            paragraph.innerHTML = 'love my mom and dad'
+        }  else {
             paragraph.innerHTML = 'learn from data'
         }
     }  
     window.setInterval(animateContent, 1000);
+      
+    
     const panels = document.querySelectorAll('.panel');
 
     function toggleOpen() {

@@ -4,6 +4,7 @@ html {
       background:#ffc600;
 /*      font-family:'Courier New';*/
     font-family: 'Segoe UI', sans-serif;
+    font-family: 'Helvetica', Sans-Serif;
       font-size: 20px;
       font-weight: 200;
       scroll-behavior: smooth;
@@ -20,6 +21,9 @@ html {
     .navbar {
       overflow: hidden;
       background-color: #333;
+        background-color: #1B3E69;
+        background-color: #12243A ;
+        background-color: #88878C;
       position: fixed;
       top: 0;
 /*        bottom: 90%;*/
@@ -39,8 +43,7 @@ html {
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;
-        
+      font-size: 17px;   
     }
 
     .navbar a:hover {
@@ -74,7 +77,9 @@ html {
         background: #C4C4C3 ;
         background: #4F4E4C ;
         
-    background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
+    background: linear-gradient(to bottom, #CFE0F6 0%, #A0C7F7  100%);
+        background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
+        background: white;
     color: #4F4E4C ;
       text-align: center;
       align-items:center;
@@ -104,6 +109,7 @@ html {
         flex-direction: column;
         justify-content: center;
       align-items: center;
+/*        color: #1B4A85s;*/
         }
 
     .subpanel {
@@ -152,6 +158,7 @@ html {
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
       filter: grayscale(100%);
         opacity: 0.2;
+
 /*        filter: alpha(opacity=40);*/
 /*
         justify-content: center;
@@ -162,6 +169,8 @@ html {
 .subpanel1 > img:hover {
     opacity: 1;
     filter: grayscale(0%);
+/*    filter: sepia(1%) hue-rotate(50deg) saturate(50%);*/
+
     
 }
 
@@ -255,6 +264,11 @@ span:before{
 /*      background:#F8F7F4 ;*/
     display: flex;
     background: linear-gradient(to top, #A5A5A3 0%, #4F4E4C   100%);
+    background: linear-gradient(to top, #CFE0F6 0%, #A0C7F7  100%);
+    background: linear-gradient(to top, #2F435C 0%, #2F435C  100%);
+    background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
+    background: white;
+/*    background: linear-gradient(to top, #F8F7F4 0%, #E2E1DF  100%);*/
         /* box-shadow is for the line between two panels*/
 /*      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);*/
       color:#F8F7F4  ;
@@ -270,17 +284,18 @@ span:before{
       text-decoration: none;
       margin: 5px 2px;
         border-radius: 50%;
-        border: 1px solid black;
-        opacity: 0.3;
+        border: 0.25px solid black;
+        opacity: 0.2;
     }
     .fa:hover {
-        opacity: 1;
+        opacity: 0.8;
     }
 
     .fa-facebook {
       background: #4F4E4C;
         background: black;
-      color: white;
+        background: white;
+      color: #0754B2 ;
         
     }
 
@@ -291,12 +306,14 @@ span:before{
 */
         background: #4F4E4C;
         background: black;
-      color: white;
+        background: white;
+      color: #0754B2 ;
     }
 
     .fa-github {
           background: black;
-          color: white;
+        background: white;
+          color: #0754B2 ;
         }
 
     .fa-linkedin {
@@ -306,18 +323,40 @@ span:before{
 */
         background: #4F4E4C;
         background: black;
-      color: white;
+        background: white;
+      color: #0754B2 ;
     }
 
     .fa-envelope {
-/*
-          background: black;
-          color: white;
-*/
         background: #4F4E4C;
         background: black;
-      color: white;
+        background: white;
+      color: #0754B2 ;
         }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
 
 /*
     .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
