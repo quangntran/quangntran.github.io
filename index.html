@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="./style.css">
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">-->
    
-    
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
 </head>
     
 <body>
@@ -20,12 +21,14 @@
   <div class="panels" id="home">
     <div class="panel panel1">
         <div class="subpanel subpanel1">
-            <p>quang tran</p>
-            <p>how are you, como va, sao rồi</p>
+            <img src="./profile.png" alt="Italian Trulli">
+            <h3>quang tran</h3>
+            <p>what's up como va sao rồi</p>
         </div>
         <div class="subpanel subpanel2">
-            <p>good at learning from data, philosophizing</p>
-            <p>interested in la </p>
+            <p>i <span class="ani">learn from data</span></p>
+            <p>i worked in <span class="flag flag-us"></span></p>
+            
         </div>
     </div>
     <div class="panel panel2">
@@ -88,6 +91,26 @@
 -->
 
   <script>
+      
+    function animateContent() {
+        paragraph = document.querySelector('.ani');
+        if (paragraph.innerHTML == 'learn from data'){
+            paragraph.innerHTML = 'build models'
+        } else if (paragraph.innerHTML == 'build models'){
+            paragraph.innerHTML = 'philosophize'
+        } else if (paragraph.innerHTML == 'philosophize') {
+            paragraph.innerHTML = 'do maths'
+        } else if (paragraph.innerHTML == 'do maths'){
+            paragraph.innerHTML = 'watch musicals'
+        } else if (paragraph.innerHTML == 'watch musicals') {
+            paragraph.innerHTML = 'try to be unbiased'
+        } else if (paragraph.innerHTML == 'try to be unbiased') {
+            paragraph.innerHTML = 'drink enough fluid a day'
+        } else {
+            paragraph.innerHTML = 'learn from data'
+        }
+    }  
+    window.setInterval(animateContent, 1000);
     const panels = document.querySelectorAll('.panel');
 
     function toggleOpen() {
