@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flex Panels 💪</title>
+  <title>Quang Tran</title>
     <link rel="stylesheet" href="./style.css">
   <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,17 +13,17 @@
     
 <body>
   <div class="navbar">
-      <a class="navitem" href="#home">introduce</a>
-      <a class="navitem" href="#education">learn</a>
+      <a class="navitem" href="#introduce">introduce</a>
+      <a class="navitem" href="#learn">learn</a>
       <a class="navitem" href="#contact">compute</a>
   </div>
 
-  <div class="panels" id="home">
+  <div class="panels" id="introduce">
     <div class="panel panel1">
         <div class="subpanel subpanel1">
             <img src="./profile.png" alt="Italian Trulli">
-            <h3>quang tran</h3>
-            <p>what's up como va sao rồi</p>
+            <p>quang tran</p>
+<!--            <p>what's up como va sao rồi</p>-->
         </div>
         <div class="subpanel subpanel2">
             <p>i <span class="ani">learn from data</span></p>
@@ -34,103 +34,41 @@
     <div class="panel panel2">
 <!--      <p><a href="#" class="fa fa-facebook"></a></p>-->
       <p><a  href="https://www.facebook.com/TrNhQu" target="_blank" class="fa fa-facebook"></a></p>
-      <p class="tooltip" title="ask me for my instagram account"><a  href="#" target="_blank" target="_blank" class="fa fa-instagram"></a><span class="tooltiptext">ask me for my instagram account</span></p>
+      <p><a href="https://www.linkedin.com/in/quangnntran/"  target="_blank" class="fa fa-linkedin"></a></p>
       <p><a href = "mailto: quangtran0698@gmail.com" target="_blank" class="fa fa-envelope"></a></p>
       <p><a href="https://github.com/quangntran" target="_blank" class="fa fa-github"></a></p>
-      <p><a href="https://www.linkedin.com/in/quangnntran/"  target="_blank" class="fa fa-linkedin"></a></p>
-    </div>
-<!--
-    <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
-    </div>
-    <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
-    </div>
-    <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
-    </div>
--->
+
+<!--        <p class="tooltip" title="ask me for my instagram account"><a  href="#" target="_blank" target="_blank" class="fa fa-instagram"></a><span class="tooltiptext">currently not available</span></p>-->
+    </div>   
+  </div>
+    
+     <div class="learn" id="learn">
+      <div class="learnpan learnpan1">
+          <div class="learnsubpan learnsubpan1">
+              <img src="./minerva.png" alt="college logo">
+              <h3>minerva university</h3>
+              <p><span class="learnmore">bachelor in computer science</span></p>
+          </div>
+          <div class="learnsubpan learnsubpan2">
+              <p>i travelled to san francisco, seoul, hyderabad, berlin and buenos aires to study and intern/ my favorite is buenos aires/ school taught me data science, ai and softdev but i also self taught machine learning, philosophy, basic spanish, healthy dieting and lifestyle</p>
+          </div>
+          
+      </div>
+      <div class="learnpan learnpan2">
+          <div class="learnsubpan learnsubpan1">
+              <img src="./ptnk.jpg" alt="high school logo">
+              <h3>high school for the gifted</h3>
+              <p><span class="learnmore">maths major</span></p>
+          </div>
+          <div class="learnsubpan learnsubpan2">
+              <p class="short-ver">it was my dream school/ i learned lots of advanced maths there/ i also did well in physics, literature and english</p>
+              <p class="long-ver">i travelled to san francisco, seoul, hyderabad, berlin and buenos aires to study/ my favorite is buenos aires/ the school paper says i learned data science, ai and softdev but i also learned spanish and philosophy along the way</p>
+          </div>
+      </div>
+      
   </div>
 
-    
-<!--
-
-  <div class="panels" id="education" >
-    <div class="panel panel1">
-      <p>Ed</p>
-      <p>Edd</p>
-      <p>Dance</p>
-    </div>
-    <div class="panel panel2">
-      <p>Give</p>
-      <p>Take</p>
-      <p>Receive</p>
-    </div>
-    <div class="panel panel3">
-      <p>Experience</p>
-      <p>It</p>
-      <p>Today</p>
-    </div>
-    <div class="panel panel4">
-      <p>Give</p>
-      <p>All</p>
-      <p>You can</p>
-    </div>
-    <div class="panel panel5">
-      <p>Life</p>
-      <p>In</p>
-      <p>Motion</p>
-    </div>
-  </div> 
--->
-
-  <script>
-      
-    function animateContent() {
-        paragraph = document.querySelector('.ani');
-        if (paragraph.innerHTML == 'learn from data'){
-            paragraph.innerHTML = 'build machine learning models'
-        } else if (paragraph.innerHTML == 'build machine learning models'){
-            paragraph.innerHTML = 'philosophize'
-        } else if (paragraph.innerHTML == 'philosophize') {
-            paragraph.innerHTML = 'do maths'
-        } else if (paragraph.innerHTML == 'do maths'){
-            paragraph.innerHTML = 'watch musicals'
-        } else if (paragraph.innerHTML == 'watch musicals') {
-            paragraph.innerHTML = 'try to be unbiased'
-        } else if (paragraph.innerHTML == 'try to be unbiased') {
-            paragraph.innerHTML = 'drink enough fluid a day'
-        } else if (paragraph.innerHTML == 'drink enough fluid a day') {
-            paragraph.innerHTML = 'love my mom and dad'
-        }  else {
-            paragraph.innerHTML = 'learn from data'
-        }
-    }  
-    window.setInterval(animateContent, 1000);
-      
-    
-    const panels = document.querySelectorAll('.panel');
-
-    function toggleOpen() {
-      console.log('Hello');
-      this.classList.toggle('open');
-    }
-
-    function toggleActive(e) {
-      console.log(e.propertyName);
-      if (e.propertyName.includes('flex')) {
-        this.classList.toggle('open-active');
-      }
-    }
-
-    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
-    panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+  <script src="script.js">
   </script>
 
 </body>

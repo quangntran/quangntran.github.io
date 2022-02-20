@@ -4,7 +4,7 @@ html {
       background:#ffc600;
 /*      font-family:'Courier New';*/
     font-family: 'Segoe UI', sans-serif;
-    font-family: 'Helvetica', Sans-Serif;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', Sans-Serif;
       font-size: 20px;
       font-weight: 200;
       scroll-behavior: smooth;
@@ -24,6 +24,9 @@ html {
         background-color: #1B3E69;
         background-color: #12243A ;
         background-color: #88878C;
+        background-color: #333;
+        background-color: white;
+        
       position: fixed;
       top: 0;
 /*        bottom: 90%;*/
@@ -33,6 +36,7 @@ html {
       display: flex;
         text-align: center;
       align-items:center;
+        z-index: 10;
         
     }
 
@@ -40,15 +44,16 @@ html {
       float: left;
       display: block;
       color: #f2f2f2;
+        color: black;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
-      font-size: 17px;   
+      font-size: 25px;   
     }
 
     .navbar a:hover {
-      background: #ddd;
-      color: black;
+/*      background-color: #ddd;*/
+      color: #0d05f0;
     }
 
     .navitem {
@@ -58,7 +63,7 @@ html {
       align-items:center;
     }
 
-
+/* ============== LEVEL 1 ============== */
 
     .panels {
 /*      position: relative;*/
@@ -71,6 +76,13 @@ html {
       display: flex;
     }
 
+    .learn {
+        min-height: 100vh;
+        display: flex;
+        
+    }
+
+/* ============== LEVEL 2 ============== */
     .panel {
       background:#C4C4C3;
         background: #ddd;
@@ -80,7 +92,17 @@ html {
     background: linear-gradient(to bottom, #CFE0F6 0%, #A0C7F7  100%);
         background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
         background: white;
+        background:#dbd6d5;
+        background: #280d59; 
+        background: #dcdae0;
+        background: #88878a;
+        background-color: #060659;
+        background-color: #041436;
     color: #4F4E4C ;
+        color: black;
+        color: #cbcacc;
+        color: white;
+        color: #f0f3fa;
       text-align: center;
       align-items:center;
       /* Safari transitionend event.propertyName === flex */
@@ -93,57 +115,207 @@ html {
       background-size:cover;
       background-position:center;
       flex: 1;
-        flex-grow: 1;
+      flex-grow: 1;
       justify-content: center;
         
       
 /*      flex-direction: column;*/
         overflow: hidden;
+        display: flex;
     }
+
 
     .panel1 {
         width: 100%;
 /*        text-align: center;*/
 /*        justify-content: center;*/
-        display:flex;
+/*        display:flex;*/
         flex-direction: column;
         justify-content: center;
-      align-items: center;
+        align-items: center;
 /*        color: #1B4A85s;*/
+        }
+
+    
+    .panel2{
+    /*      background:#F8F7F4 ;*/
+/*        display: flex;*/
+        background: linear-gradient(to top, #A5A5A3 0%, #4F4E4C   100%);
+        background: linear-gradient(to top, #CFE0F6 0%, #A0C7F7  100%);
+        background: linear-gradient(to top, #2F435C 0%, #2F435C  100%);
+        background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
+        background: white;
+        background: #dcdae0;
+        background: #88878a;
+        background: #041436;
+    /*    background: #dbd6d5;*/
+    /*    background: linear-gradient(to top, #F8F7F4 0%, #E2E1DF  100%);*/
+            /* box-shadow is for the line between two panels*/
+    /*      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);*/
+          color:#F8F7F4  ;
+
+        }
+     
+    .learn > * {
+        
+        text-align: center;
+        align-items:center;
+        background-size:cover;
+        background-position:center;
+        justify-content: center;
+        background-color: white;
+        background-color: #fbfbfd;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        box-shadow:inset 0 0 0 5px #C8C7CD;
+        flex-grow: 1;
+        flex: 1;
+        transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.8s cubic-bezier(.43,.02,.58,.99),
+        background 0.2s;
+        -webkit-transition:
+        font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.8s cubic-bezier(.43,.02,.58,.99),
+        background 0.2s;
+        transition: all 0.8s cubic-bezier(.43,.02,.58,.99);
+    }
+
+/*
+.learnpan {
+    display: flex;
+}
+*/
+.learnpan.open {
+    flex: 5;
+}
+    
+
+
+/*
+#learn .panel {
+    background-color: white;
+    color: black;
+}
+#learn .panel1 {
+    background-color: #041436;
+    color: white; 
+}
+*/
+
+/* ============== LEVEL 3 ============== */
+    .panel1 > * {
+        font-size: 1.8em;
+        width: 100%;
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        
         }
 
     .subpanel {
         flex: 1;
     }
 
-
-    .panel1 > * {
-    /*      text-transform: uppercase;*/
-    /*      font-family: 'Amatic SC', cursive;*/
-    /*      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);*/
-          font-size: 1.8em;
-        width: 100%;
-        border: 1px solid green;
-        }
-
+    
 
     .subpanel1 {
-        display: flex;
-        flex-direction: column;
+/*        display: flex;*/
+/*        flex-direction: column;*/
         justify-content: flex-end;
         padding:2px;
     /*    margin-bottom: -400px;*/
-
-    
-          align-items: center;
+        align-items: center;
     
     }
 
+    .subpanel2 {
+/*        display: flex;*/
+/*        flex-direction: column;*/
+        justify-content: center;
+        text-align: left;
+/*        align-items: center;*/
+        padding:2px;
+    }
 
+
+    /* Flex Items */
+    .panel2 > * {
+      margin:0;
+/*      width: 100%;*/
+      height: 100%;
+      transition:transform 0.5s;
+      flex: 1;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid red;
+      flex-grow: 1;
+    }
+    
+
+
+    .panel2 p {
+      font-size: 2.5em;
+    }
+
+/*
+#learn .panel1 p {
+    font-size: 5em;
+}
+*/
+.learnpan > * {
+    border: 1px solid blue;
+/*    margin: 0;*/
+/*    flex-grow: 1;*/
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.learnsubpan1 {
+    flex: 0.8 0;
+    justify-content: flex-end;
+    width: 80%;
+    align-items: center;
+    
+}
+
+.learnsubpan2 {
+    flex: 1 0;
+    text-align: left;
+/*
+    justify-content: center;
+    align-items: center;
+*/
+/*    padding: 30px;*/
+}
+/*
+.learnsubpan1 {
+    flex: 1;
+}
+*/
+
+    .learnpan img {
+            max-height: 100px;
+            max-width: 100px;
+        
+        }
+/*
+.para {
+    margin-top: 70px;
+    font-size: 16px;
+}
+*/
+/* ============== LEVEL 4 ============== */
     .subpanel1 > * {
 
         border: 1px solid blue;
          margin:2px;  
+        font-size: 2.5em;
     /*    align-self: end;*/
     /*    flex: 1;*/
 
@@ -174,17 +346,6 @@ html {
     
 }
 
-
-    
-
-    .subpanel2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-/*        align-items: center;*/
-        padding:2px;
-    }
     .subpanel2 > * {
         border: 1px solid blue;
          margin:2px;  
@@ -199,81 +360,11 @@ html {
     }
 
     .subpanel2 p:first-child {
-    /*    border: 1px solid blue;*/
-/*        margin-top: 100px;  */
-    /*    align-self: end;*/
-    /*    flex: 1;*/
 
     }
 
-/*
-span:before{
-    content: 'jk';
-    -webkit-content: 'jk';
-    -webkit-animation: animate infinite 6s;
-    animation: animate infinite 6s;
-}
-
-@keyframes animate{
-    0%{
-        content: 'philosophy';
-    }
-    20%{
-        content: 'philosophy';
-    }
-    40%{
-        content: 'fds';
-    }
-    60%{
-        content: 'make plans';
-    }
-    80%{
-        content: 'do machine learning';
-    }
-    100%{
-        content: 'exercise';
-    }
-    
-}
-@-webkit-keyframes animate{
-    0%{
-        -webkit-content: 'philosophy';
-    }
-    20%{
-        -webkit-content: 'philosophy';
-    }
-    40%{
-        -webkit-content: 'fds';
-    }
-    60%{
-        -webkit-content: 'make plans';
-    }
-    80%{
-        -webkit-content: 'do machine learning';
-    }
-    100%{
-        -webkit-content: 'exercise';
-    }
-    
-}
-*/
 
 
-
-.panel2{
-/*      background:#F8F7F4 ;*/
-    display: flex;
-    background: linear-gradient(to top, #A5A5A3 0%, #4F4E4C   100%);
-    background: linear-gradient(to top, #CFE0F6 0%, #A0C7F7  100%);
-    background: linear-gradient(to top, #2F435C 0%, #2F435C  100%);
-    background: linear-gradient(to bottom, #F8F7F4 0%, #E2E1DF  100%);
-    background: white;
-/*    background: linear-gradient(to top, #F8F7F4 0%, #E2E1DF  100%);*/
-        /* box-shadow is for the line between two panels*/
-/*      box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);*/
-      color:#F8F7F4  ;
-    
-    }
 
 /* social media logos*/
     .fa {
@@ -288,52 +379,33 @@ span:before{
         opacity: 0.2;
     }
     .fa:hover {
-        opacity: 0.8;
+        opacity: 1;
     }
 
     .fa-facebook {
       background: #4F4E4C;
         background: black;
         background: white;
+/*        background: #dbd6d5;*/
       color: #0754B2 ;
+        color: black;
         
     }
 
     .fa-instagram {
-/*
-      background: #125688;
-      color: white;
-*/
         background: #4F4E4C;
         background: black;
         background: white;
       color: #0754B2 ;
+        color: black;
     }
 
     .fa-github {
           background: black;
         background: white;
           color: #0754B2 ;
+        color: black;
         }
-
-    .fa-linkedin {
-/*
-      background: #007bb5;
-      color: white;
-*/
-        background: #4F4E4C;
-        background: black;
-        background: white;
-      color: #0754B2 ;
-    }
-
-    .fa-envelope {
-        background: #4F4E4C;
-        background: black;
-        background: white;
-      color: #0754B2 ;
-        }
-
     .tooltip {
       position: relative;
       display: inline-block;
@@ -357,65 +429,78 @@ span:before{
     .tooltip:hover .tooltiptext {
       visibility: visible;
     }
-
-/*
-    .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
-    .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
-    .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
-    .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
-    .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
-*/
-
-    /* Flex Items */
-    .panel2 > * {
-      margin:0;
-/*      width: 100%;*/
-        height: 100%;
-      transition:transform 0.5s;
-      flex: 1;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-        border: 1px solid red;
-        flex-grow: 1;
+    .fa-linkedin {
+        background: #4F4E4C;
+        background: black;
+        background: white;
+      color: #0754B2 ;
+        color: black;
     }
 
-/*
-    .panel > *:first-child { transform: translateY(-100%); }
-    .panel.open-active > *:first-child { transform: translateY(0); }
-    .panel > *:last-child { transform: translateY(100%); }
-    .panel.open-active > *:last-child { transform: translateY(0); }
-*/
-/*
-.panel2{
-    flex-direction: row;
+    .fa-envelope {
+        background: #4F4E4C;
+        background: black;
+        background: white;
+      color: #0754B2 ;
+        color: black;
+        }
+
+.learnsubpan > * {
+    
+    border: 1px solid magenta;
+    margin: 0;
+
 }
-*/
-    .panel2 p {
-/*      text-transform: uppercase;*/
-/*      font-family: 'Amatic SC', cursive;*/
-/*      text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);*/
-      font-size: 2.5em;
-    }
+
+.learnsubpan2 p {
+    font-size: 15px;
+    margin-top: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+/*    margin-bottom: -2em;*/
+}
+
+.learnsubpan1{
+    opacity: 0.4;
+    -webkit-filter: grayscale(100%);
+}
 
 
+.learnsubpan1:hover{
+    opacity: 1;
+    cursor: pointer;
+    -webkit-filter: grayscale(0%);
+    
+}
+/*.panel > *:first-child { transform: translateY(-100%); }*/
+.learnsubpan2 .short-ver {
+    transition: opacity 1s ease-out;
+/*    display: block;*/
+/*    transform: translateY(-100%);*/
+}
+.learnpan.open-active .learnsubpan2 .short-ver{
+    opacity: 0;
+    height: 0;
+}
 
+.learnsubpan2 .long-ver {
+/*    display: none;*/
+    transition: opacity 1s ease-out;
+    -webkit-transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+}
+.learnpan.open-active .learnsubpan2 .long-ver{
+    opacity: 1;
+    height: auto;
+}
 /*
-    .panel1 div:nth-child(1) {
-      margin-bottom: 80px;
-    }
-*/
-*/
+.learnmore {
+    color: #0867D8;
+    cursor: pointer;
+}
 
-/*
-    .panel p:nth-child(2) {
-      font-size: 4em;
-    }
-*/
-
-/*
-    .panel.open {
-      flex: 5;
-      font-size:40px;
+.learnmore a:hover {
+      background-color: #ddd;
+      color: #0d05f0;
     }*/
-
